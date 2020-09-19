@@ -1,0 +1,39 @@
+
+###
+GET http://localhost:8080/api/todo
+Accept: application/json
+
+<> 2020-09-19T104231.200.json
+<> 2020-09-19T103253.200.json
+
+###
+POST  http://localhost:8080/api/todo
+Content-Type: application/json
+
+{
+   "title": "lorem Ipsum",
+   "description": "Nullam convallis lacus quis ex pretium aliquam.",
+   "userName": "Adam Mickiewicz"
+}
+
+<> 2020-09-19T104236.500.json
+<> 2020-09-19T104152.500.json
+
+###
+GET http://localhost:8080/api/todo/1
+Accept: application/json
+
+###
+PUT  http://localhost:8080/api/todo
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "lorem Ipsum - new",
+  "description": "Nullam convallis lacus quis ex pretium aliquam.",
+  "userName": "Adam Mickiewicz"
+}
+
+###
+DELETE http://localhost:8080/api/todo/1
+Accept: application/json
